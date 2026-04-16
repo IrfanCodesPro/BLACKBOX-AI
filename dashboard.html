@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reality-Aware Dashboard | ShaTech</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Reality-Aware Camera System</div>
+    <div class="branding">Developed by ShaTech</div>
+</header>
+
+<main class="container">
+
+    <!-- CAMERA FEED -->
+    <section class="feed-panel">
+        <div class="video-container">
+            <img src="/video_feed" id="cameraFeed">
+            <div id="live-badge" class="badge">LIVE</div>
+        </div>
+    </section>
+
+    <!-- INFO PANEL -->
+    <section class="info-panel">
+
+        <!-- DECISION CARD -->
+        <div class="card decision-card">
+            <h2>Current Decision</h2>
+
+            <div id="decision-display" class="highlight-text">--</div>
+
+            <div class="score-bar-container">
+                <span>Sensitivity</span>
+                <div class="progress-bar">
+                    <div id="score-fill"></div>
+                </div>
+                <span id="score-val">0</span>
+            </div>
+        </div>
+
+        <!-- EXPLANATION -->
+        <div class="card explanation-card">
+            <h2>Generative Context</h2>
+            <p id="explanation-text" class="typewriter">
+                Waiting for analysis...
+            </p>
+        </div>
+
+    </section>
+
+</main>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
